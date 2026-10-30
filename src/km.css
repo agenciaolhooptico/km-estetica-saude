@@ -5,3 +5,21 @@ body{color:var(--ink);background:var(--paper)}.header{background:#f8f7f3ed;borde
 @media(min-width:761px){.hero-image{height:calc(100% - 110px);object-position:50% 10%}}
 @media(max-width:760px){.hero-signature{position:static;inset:auto;width:auto;transform:none;margin-top:22px;margin-bottom:20px}}
 
+/* Mobile: transição direta e procedimentos em linhas compactas. */
+@media(max-width:760px){
+ .hero-scroll,.promise-bar,.procedures>.section-head>div>.eyebrow{display:none}
+ .procedures{padding-top:24px}
+ .procedures .section-head h2{font-size:34px;line-height:1.12;margin-top:0}
+ .procedures .section-head>p{margin-top:14px}
+ .filters{gap:6px;margin:18px 0 14px}
+ .filters button{font-size:12px;padding:8px 12px;min-height:40px}
+ .service-grid{grid-template-columns:minmax(0,1fr);gap:8px}
+ .service,.service.featured,.service.featured:nth-child(2){display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:14px;padding:14px 16px;min-height:76px;border-radius:13px}
+ .service-top,.service>p,.service.featured>p,.service-actions>a{display:none}
+ .service h3,.service.featured h3{font-size:19px;line-height:1.22;letter-spacing:-.3px;min-height:0;margin:0;hyphens:none;overflow-wrap:normal;word-break:normal}
+ .service-actions{border:0;padding:0;margin:0;display:block}
+ .service-actions button{min-height:44px;font-size:12px;gap:8px;padding:4px 0;white-space:nowrap;width:auto}
+ .service-actions button svg{width:16px;height:16px}
+}
+@media(max-width:360px){.service-actions button{font-size:0;width:44px;height:44px;justify-content:center;gap:0}.service h3,.service.featured h3{font-size:19px}}
+
